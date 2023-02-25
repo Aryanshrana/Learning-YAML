@@ -16,4 +16,10 @@ Non-metals:
  - fluorine
  - selenium
  - arsenic
+---
+# flow style to avoid identation problem
+Non-metals: [fluorine, arsenic]
+---
+# for key value pair
+{sahara: "a desert", location: "northern parts of africa"}
 ...
