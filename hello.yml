@@ -1,0 +1,19 @@
+# this is a key value pair
+"Gold": "this is a shiny metal"
+79: "it is a atomic number of gold"
+"Au": "This is a atomic symbol of gold"
+---
+#yaml is case sensetive
+# Lists
+- Gold
+- Silver
+- Copper
+- Tungsten
+---
+#we add --- to tell yaml that these three are different things or different documents and ... to end the documents
+Non-metals:
+# this is block style
+ - fluorine
+ - selenium
+ - arsenic
+...
