@@ -1,0 +1,43 @@
+# string variables are after colon , and can be expressed in three types "",'' or without quotes
+myself: "Aryansh Rana"
+Hair: Black
+eyes: 'Brown'
+
+music: |
+ i like imagine dragons and zayn malik.
+ kishore kumar's songs were also great.
+
+#write a single line in multiple lines
+message: >
+ Hello people
+ of eldia
+ this is eren
+ yeager, i will
+ give you freedom.
+ Tatakae
+
+number: 5674
+marks: 78.54
+booleanValue: No # or n, N, false,FALSE
+#same with true->Yes, Y,y, TRUE etc.
+
+#specify the type
+Zero: !!int 0
+positiveNum: !!int 69
+negativeNum: !!int -69
+binaryNum: !!int 0b0011010
+commavalue: !!int +540_699 #storing 540,699
+exponentialnumbers: 7.984E23
+
+marks: !!float 89.65
+infinite: !!float .inf 
+not a num: .nan 
+booleanvalue: !!bool n
+strinvalue: !!str "mikasa"
+
+#null
+family: !!null ~ #or null Null
+~: this is null key
+
+#time and date
+date: !!timestamp 26-02-2023
