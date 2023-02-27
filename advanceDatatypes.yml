@@ -1,0 +1,65 @@
+#lists
+College: !!seq
+ - students
+ - faculty
+ - staff
+ - management
+ - placement_cell
+#this above lists can be represented in this format also
+college: [students, faculty, management]
+
+#It may happen , when some of keys in sequence is null, then it is sparse sequence
+
+Mycharacteristics: !!seq
+ - Black_hair
+ - Brown_eyes
+ - 
+ - Null
+
+#nested sequence: to represent subitems of fields in lists
+-
+ - "apple"
+ - "grapes"
+ - "pear"
+- 
+ - carrot
+  - "carrot-1"
+  - "carrot_2"
+ - "cucumber"
+ - "tomato"
+
+# maps - key:value pairs like hash maps
+!!maps
+# nested map-> map within a map
+name: "Aryansh Rana"
+about: 
+ age: 20
+ job: "Student"
+ Company: "UPES"
+
+# this above thing is same as 
+name: "Aryansh Rana"
+about: { age: 20, job: "Student"}
+
+#it may posible that you require one key to have multiple values then it is called Pairs
+
+#!!pairs
+pairexamples: !!pairs
+ - name: "aryansh"
+ - likes: "devops"
+ - likes: "blockchain"
+#same as
+pairexamples: { likes: "devops", likes: "blockchain"}
+# they are stored as array of hashtables
+
+# set-> will allow you to have unique value, here there will not be key value pair , only items and items
+#like for example names->only unique names we want
+
+names: !!set
+ # here we use ?
+ ? Aryansh
+ ? Shubham
+ ? Warren
+ # yaml is case senesetive so it will allow aryansh and Aryansh or any anothe pair
+
+person:
