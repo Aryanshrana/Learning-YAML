@@ -62,4 +62,19 @@ names: !!set
  ? Warren
  # yaml is case senesetive so it will allow aryansh and Aryansh or any anothe pair
 
-person:
+# when you want to have a particular key and value is sequences
+# then we use Dictionary !!omap
+
+employee: !!omap # it is a key and value is going to be a list itself
+ - person1:
+    name: Aryansh
+    age: 20
+    job: Devops
+
+ - person2:
+    name: Shubham
+    age: 19
+    job: Blockchain
+
+# reusing some properties using anchor
+
