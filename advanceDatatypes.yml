@@ -77,4 +77,43 @@ employee: !!omap # it is a key and value is going to be a list itself
     job: Blockchain
 
 # reusing some properties using anchor
+# we use anchor tag to reuse some properties like this below instead of writing those properties again and again
+# if we don't use anchor tag this looks like
+LikesandDislikes:
+ Fav-color: Black
+ Non-fav-color: Light yellow
 
+Employee1:
+ Name: Aryansh rana
+ Fav-color: Black
+ Non-fav-color: Light yellow
+ 
+Employee2:
+ Name: Shubham
+ Fav-color: Black
+ Non-fav-color: Light yellow
+
+Employee3:
+ Name: Kakashi
+ Fav-color: Black
+ Non-fav-color: Light yellow
+
+# but now we are using anchor tag the above code looks like this
+
+LikesandDislikes: &base
+ Fav-color: Black
+ Non-fav-color: Light yellow
+
+Employee1:
+ Name: Aryansh rana
+ <<: *base
+Employee2:
+ Name: Shubham
+ <<: *base
+
+Employee3:
+ Name: Kakashi
+ <<: *base
+ Non-fav-color: Purple # we are overwriting it now non-fav-color of kakashi is purple
+
+ 
