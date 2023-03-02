@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<School Name="St Mary's Schoool" Principal="Someone">
+	
+	<Students>
+		<Student1>
+			<Name>Aryansh</Name>
+			<rollno>12</rollno>
+			<marks>88</marks>
+		</Student1>
+		<Student2>
+			<Name>Shubham</Name>
+			<rollno>7</rollno>
+			<marks>98</marks>
+		</Student2>
+		<Student3>
+			<Name>Anisha</Name>
+			<rollno>5</rollno>
+			<marks>56</marks>
+		</Student3>
+	</Students>
+</School>
