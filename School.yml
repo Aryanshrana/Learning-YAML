@@ -1,0 +1,17 @@
+---
+School:
+  Name: St Mary's School
+  Principal: Someone
+  Students:
+    Student1:
+      Name: Aryansh
+      rollno: 12
+      marks: 88
+    Student2:
+      Name: Shubham
+      rollno: 7
+      marks: 98
+    Student3:
+      Name: Anisha
+      rollno: 5
+      marks: 56
